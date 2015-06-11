@@ -21,14 +21,15 @@
     background-image: url(../img/social-icons.svg), none; /* IE8 does not support multiple backgrounds (even when it is empty), so reverts to the former rule with the .png */
     background-repeat: no-repeat;
     display: block;
-    height: 56px;
-    transition: opacity 350ms ease-out;
-    -webkit-transition: opacity 350ms ease-out;
-    -o-transition: opacity 350ms ease-out;
+    height: 58px;
+    transition: all 350ms ease-out;
+    -webkit-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
     width: 50px;
 }
 
 .social-media-icons a:hover {
+    background-position-y: 2px; /* Bonus image movement, no support by Firefox and Opera. Requires images with similar y position. */
     filter: alpha(opacity=80); /* Fallback for older versions of IE */
     opacity: 0.8;
 }
